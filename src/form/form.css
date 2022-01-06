@@ -1,0 +1,314 @@
+/********************************Main*************************************************/
+html{
+    font-size: 92.5%;
+    box-sizing: border-box;
+  }
+  body{
+    margin: 0%;
+    font: 1rem helvetica;
+    height: 100vh;  
+  }
+  .App{
+    display: grid;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .Main{
+    display: flex;
+    justify-content: space-between;
+    margin:0px; 
+  }
+/**********************************************************************************/
+
+  .Right_Sidebar_Area{
+    width: 40%;
+    display: grid;
+    height: 42.2rem;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 688px) and (max-width:992px) {
+    .Main{
+        display: inline-block;
+        justify-content: space-between;
+        margin:0px;
+    }
+    .Right_Sidebar_Area{
+        width: 100%;
+        margin: auto;
+    }
+    .Left_Sidebar_Area{
+        width: 100%;
+        height: 42.2rem;
+        margin:auto;
+
+    }
+    .image{
+      width: 500px;
+      
+      margin: auto;
+    }
+    .slogan p{
+      font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width:688px) {
+    .Main{
+        display: inline-block;
+        justify-content: space-between;
+        margin:0px;
+    }
+    .Right_Sidebar_Area{
+        width: 100%;
+        margin: auto;
+    }
+    .Left_Sidebar_Area{
+        width: 100%;
+        height: 42.2rem;
+        margin-left: 5rem;
+    }
+    .image{
+      width: 500px;      
+      margin: auto;
+    }
+  }
+
+  /***********************************Formulaire connexion*****************************/
+  .form{
+    background-color: #fff;
+    /*border-radius: 10px;
+    box-shadow: 0 1px 8px rgba(0, 0,0, 0.3);*/
+    border: none;
+    width: 300px;
+    height: 20rem;
+    padding: 60px 40px;
+    margin-top: 45px;
+    margin-left: 0px;
+  }
+  .input{  
+    width: 18rem;
+    margin-bottom: 20px;
+    margin-left: 0;
+    position: relative;
+  }
+  
+  .input input {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    padding-left: 40px;
+    margin-bottom: 2rem;
+    border:none;
+    box-shadow:  #19A8d9 0px 1px 2px;
+    background-color: transparent;
+    border-radius: 20px;
+  }
+  .icon{
+    position: absolute;
+    left: 0;
+    top: 0px;
+    padding: 5px 8px;
+  }
+  .icons{
+    position: absolute;
+    left: 0;
+    top: 4.5rem;
+    padding: 5px 8px;
+    
+  }
+  .btns{
+    width: 40%;
+    height: 40px;
+    line-height: 40px;
+    background: #19A8d9;
+    border: 1px solid #19A8d9;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    margin-left: 0rem;
+    
+  }
+  .mdp{
+    font-size: 14px;
+    margin-top: 1rem;
+   text-align: center;
+   color:#19A8d9 ;
+   font-weight: bold;
+  }
+  .fotter{
+    display: flex;
+    justify-content: space-between;
+  }
+  /************************************************************************/
+
+  /********************************************Formulaire d'inscription********************/
+.form-wrapper{
+   background-color: #fff;
+    border: none;
+    width: 350px;
+    height: 23rem;
+    padding: 60px 40px;
+    margin-top: 0px;
+    margin-left: 3px;
+}
+
+.input{  
+  width: 18rem;
+  margin-bottom: 20px;
+  position: relative;
+}
+.fullname{
+  display: flex;
+  justify-content: space-between;
+}
+.name input {
+  width: 9rem;
+  height: 40px;
+  padding: 0 15px;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border:none;
+  box-shadow:  #19A8d9 0px 1px 2px;
+  border-radius: 20px;
+}
+.prénom input {
+  width: 9rem;
+  height: 40px;
+  padding: 0 15px;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border:none;
+  box-shadow:  #19A8d9 0px 1px 4px;
+  border-radius: 20px;
+}
+.email input {
+  width: 90%;
+  height: 40px;
+  padding: 0 15px;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border:none;
+  box-shadow:  #19A8d9 0px 1px 4px;
+  border-radius: 20px;
+}
+.password input {
+  width: 90%;
+  height: 40px;
+  padding: 0 15px;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border:none;
+  box-shadow:  #19A8d9 0px 1px 4px;
+  border-radius: 20px;
+}
+.password2 input {
+  width: 90%;
+  height: 40px;
+  padding: 0 15px;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border: 2px solid #3498db;
+  border:none;
+  box-shadow:  #19A8d9 0px 1px 4px;
+  border-radius: 20px;
+}
+
+.Genre{
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+}
+.radio{
+  display: flex;
+  justify-content: space-between;
+}
+.Femme{
+  font-size: 16px;
+  margin-left: 2.5rem;
+}
+.Homme{
+  font-size: 16px;
+  margin-left: 2.5rem;
+}
+.border{
+  margin-top: 0;
+  border:none;
+  box-shadow:  #19A8d9 0px 1px 4px;
+  border-radius: 20px;
+  width: 10rem;
+}
+.submit{
+  width: 40%;
+  height: 40px;
+  line-height: 40px;
+  background: #19A8d9;
+  border: 1px solid #19A8d9;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  margin-left: 7rem;
+  margin-top: 1rem;
+}
+
+/********/
+
+.error{
+  display: block;
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 11px;
+  padding-top: 3px;
+  margin-top: 0px;
+  
+
+}
+/**********************************************************************************************************/
+  /*************************************************Navigation*********************************************************/
+  nav{
+    margin-top: 50px;
+    margin-bottom: 0;
+    height: 50px;
+  }
+  .liste{
+   color: #19A8d9;
+   cursor: pointer;
+   font-size: 16px;
+   height: 100%;
+   display: inline-block;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   margin-right: 0px;
+   margin-left: 30px;
+   padding: 15px;
+   background: transparent;
+   padding-right: 20px;
+   padding-left: 20px;
+   border-left: transparent;
+   border-right: transparent;
+   border-top: transparent;
+  }
+ 
+ 
+  /**********************************************************************************************************/
+  
+  .Left_Sidebar_Area{
+    width: 60%;
+    height: 42.2rem;
+    justify-content: flex-start;
+  }
+  .slogan p{
+  margin-top: 5px;
+  color:#696969;
+  text-align: center;
+  font-size: 55px;
+  font-style: italic;
+  font-family: Foco;  
+  margin: auto;
+  }
